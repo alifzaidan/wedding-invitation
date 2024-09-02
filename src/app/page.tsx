@@ -1,23 +1,30 @@
+'use client';
+
+import CoverPage from '@/components/core/CoverPage';
+import { useEffect } from 'react';
+
 export default function Home() {
+    // useEffect(() => {
+    //     const handleContextMenu = (e: any) => {
+    //         e.preventDefault();
+    //     };
+    //     document.addEventListener('contextmenu', handleContextMenu);
+    //     return () => {
+    //         document.removeEventListener('contextmenu', handleContextMenu);
+    //     };
+    // }, []);
+
     return (
-        <main className="">
-            <div className="flex justify-center items-center h-screen bg-slate-400">
-                <div className="text-center">
-                    <h1>Rizky & Iza</h1>
-                    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-                    <h2>Alif</h2>
-                    <p>*mohon maaf bila ada kesalahan penulisan nama dan gelar</p>
-                    <button>Buka Undangan</button>
-                </div>
-            </div>
+        <main className="relative overflow-hidden">
+            <CoverPage />
             <div className="flex justify-center items-center h-screen bg-amber-600">
-                <div className="text-center">
-                    <h1>Rizky & Iza</h1>
-                    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-                    <h2>Alif</h2>
-                    <p>*mohon maaf bila ada kesalahan penulisan nama dan gelar</p>
-                    <button>Buka Undangan</button>
-                </div>
+                <div className="text-center">Isi Undangan</div>
+            </div>
+            <div className="flex justify-center items-center h-screen bg-red-600">
+                <div className="text-center">Isi Undangan</div>
+            </div>
+            <div className="flex justify-center items-center h-screen bg-green-600">
+                <div className="text-center">Isi Undangan</div>
             </div>
         </main>
     );
