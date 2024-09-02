@@ -5,7 +5,7 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                cover: "url('/assets/img/bg-cover.png')",
+                pattern: "url('/assets/img/bg-pattern.png')",
             },
         },
     },

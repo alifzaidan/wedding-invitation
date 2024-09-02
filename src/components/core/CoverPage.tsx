@@ -26,7 +26,7 @@ export default function CoverPage() {
     }, [isCoverVisible]);
     return (
         <div
-            className={`fixed inset-0 h-screen sm:p-8 p-4 bg-cover transition-transform duration-700 overflow-hidden ${
+            className={`fixed inset-0 h-screen sm:p-8 p-4 bg-pattern transition-transform duration-700 overflow-hidden ${
                 isCoverVisible ? 'translate-y-0' : '-translate-y-full'
             }`}
         >

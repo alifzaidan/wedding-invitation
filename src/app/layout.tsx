@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: 'Iza & Risky',
+    title: 'IZZA & RIZKY',
     description: 'Wedding Invitation for Iza & Risky',
 };
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${poppins.className} select-none`}>{children}</body>
+            <body className={`${poppins.className} `}>{children}</body>
         </html>
     );
 }

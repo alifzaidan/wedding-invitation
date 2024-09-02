@@ -1,7 +1,7 @@
 'use client';
 
 import CoverPage from '@/components/core/CoverPage';
-import { useEffect } from 'react';
+import StartPage from '@/components/core/StartPage';
 
 export default function Home() {
     // useEffect(() => {
@@ -17,9 +17,7 @@ export default function Home() {
     return (
         <main className="relative overflow-hidden">
             <CoverPage />
-            <div className="flex justify-center items-center h-screen bg-amber-600">
-                <div className="text-center">Isi Undangan</div>
-            </div>
+            <StartPage />
             <div className="flex justify-center items-center h-screen bg-red-600">
                 <div className="text-center">Isi Undangan</div>
             </div>
