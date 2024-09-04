@@ -50,7 +50,13 @@ export default function ProfilePage() {
                 <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-32" />
                 <div className="text-center text-primary">
                     <div className="relative w-72 mx-auto mb-6 -z-10">
-                        <Image src={'/assets/img/flower-5.png'} alt="Flower" width={1000} height={1000} className="absolute w-44 -top-4 -left-6" />
+                        <Image
+                            src={'/assets/img/flower-5.png'}
+                            alt="Flower"
+                            width={1000}
+                            height={1000}
+                            className="absolute w-44 -top-4 -right-6 transform scale-x-[-1]"
+                        />
                         <Image
                             src={'/assets/img/izza.jpg'}
                             alt="Izza"

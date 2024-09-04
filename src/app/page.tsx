@@ -3,6 +3,7 @@
 import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
 import ProfilePage from '@/components/core/ProfilePage';
+import SchedulePage from '@/components/core/SchedulePage';
 import StartPage from '@/components/core/StartPage';
 
 export default function Home() {
@@ -22,9 +23,7 @@ export default function Home() {
             <StartPage />
             <CountdownPage />
             <ProfilePage />
-            <div className="flex justify-center items-center h-screen">
-                <div className="text-center">Isi Undangan</div>
-            </div>
+            <SchedulePage />
         </main>
     );
 }
