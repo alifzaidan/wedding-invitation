@@ -1,6 +1,7 @@
 import { Tangerine, Vidaloka } from 'next/font/google';
 import Image from 'next/image';
 import { HiDotsHorizontal } from 'react-icons/hi';
+import { MdDateRange } from 'react-icons/md';
 
 const tangerine = Tangerine({
     subsets: ['latin'],
@@ -15,7 +16,7 @@ const vidaloka = Vidaloka({
 export default function CountdownPage() {
     return (
         <div className="flex justify-center items-center sm:p-8 p-6 bg-primary">
-            <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-4 bg-secondary h-full w-full rounded-3xl text-primary">
+            <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-8 bg-secondary h-full w-full rounded-3xl text-primary">
                 <div>
                     <Image src={'/assets/img/castle.png'} alt="Castle" width={1000} height={1000} className="w-52" />
                     <Image src={'/assets/img/flower-4.png'} alt="Flower" width={1000} height={1000} className="w-52" />
@@ -50,6 +51,10 @@ export default function CountdownPage() {
                         <p className="md:text-lg text-sm">Detik</p>
                     </div>
                 </div>
+                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-red-800">
+                    <MdDateRange size={20} />
+                    <p>Tambahkan ke Kalender</p>
+                </button>
             </div>
         </div>
     );
