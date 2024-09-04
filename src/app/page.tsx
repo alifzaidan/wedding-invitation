@@ -1,5 +1,6 @@
 'use client';
 
+import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
 import StartPage from '@/components/core/StartPage';
 
@@ -18,9 +19,7 @@ export default function Home() {
         <main className="relative overflow-hidden">
             <CoverPage />
             <StartPage />
-            <div className="flex justify-center items-center h-screen bg-red-600">
-                <div className="text-center">Isi Undangan</div>
-            </div>
+            <CountdownPage />
             <div className="flex justify-center items-center h-screen bg-green-600">
                 <div className="text-center">Isi Undangan</div>
             </div>
