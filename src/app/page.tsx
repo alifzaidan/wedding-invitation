@@ -2,6 +2,7 @@
 
 import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
+import ProfilePage from '@/components/core/ProfilePage';
 import StartPage from '@/components/core/StartPage';
 
 export default function Home() {
@@ -20,7 +21,8 @@ export default function Home() {
             <CoverPage />
             <StartPage />
             <CountdownPage />
-            <div className="flex justify-center items-center h-screen bg-green-600">
+            <ProfilePage />
+            <div className="flex justify-center items-center h-screen">
                 <div className="text-center">Isi Undangan</div>
             </div>
         </main>

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Alike } from 'next/font/google';
 import './globals.css';
 
-const poppins = Poppins({
+const alike = Alike({
     subsets: ['latin'],
-    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+    weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${poppins.className} `}>{children}</body>
+            <body className={`${alike.className} bg-pattern bg-cover select-none`}>{children}</body>
         </html>
     );
 }

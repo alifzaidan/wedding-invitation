@@ -7,6 +7,7 @@ const config: Config = {
             colors: {
                 primary: '#63343E',
                 secondary: '#E9D8BC',
+                tertiary: '#977B48',
             },
             backgroundImage: {
                 pattern: "url('/assets/img/bg-pattern.png')",
