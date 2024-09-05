@@ -4,6 +4,7 @@ import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
 import GalleryPage from '@/components/core/GalleryPage';
 import ProfilePage from '@/components/core/ProfilePage';
+import RsvpPage from '@/components/core/RsvpPage';
 import SchedulePage from '@/components/core/SchedulePage';
 import StartPage from '@/components/core/StartPage';
 import StoryPage from '@/components/core/StoryPage';
@@ -28,6 +29,7 @@ export default function Home() {
             <SchedulePage />
             <GalleryPage />
             <StoryPage />
+            <RsvpPage />
         </main>
     );
 }
