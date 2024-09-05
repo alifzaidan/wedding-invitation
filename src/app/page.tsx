@@ -8,6 +8,7 @@ import RsvpPage from '@/components/core/RsvpPage';
 import SchedulePage from '@/components/core/SchedulePage';
 import StartPage from '@/components/core/StartPage';
 import StoryPage from '@/components/core/StoryPage';
+import WishesPage from '@/components/core/WishesPage';
 
 export default function Home() {
     // useEffect(() => {
@@ -30,6 +31,7 @@ export default function Home() {
             <GalleryPage />
             <StoryPage />
             <RsvpPage />
+            <WishesPage />
         </main>
     );
 }
