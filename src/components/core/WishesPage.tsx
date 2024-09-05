@@ -1,8 +1,6 @@
 import { Tangerine, Vidaloka } from 'next/font/google';
-import Image from 'next/image';
-import { FaCheckCircle, FaRegUser } from 'react-icons/fa';
-import { GrMapLocation, GrSend } from 'react-icons/gr';
-import { PiFlowerLotusDuotone, PiMapPinAreaFill } from 'react-icons/pi';
+import { FaCheckCircle } from 'react-icons/fa';
+import { GrSend } from 'react-icons/gr';
 import { RiUser3Fill } from 'react-icons/ri';
 
 const tangerine = Tangerine({
@@ -19,7 +17,7 @@ export default function WishesPage() {
     return (
         <div className="sm:p-12 p-6 bg-primary">
             <div className="text-center md:px-12 px-2 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
-                <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Best Whises</h1>
+                <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Best Wishes</h1>
                 <p className="sm:text-lg text-sm lg:px-32 mt-2 mb-4">
                     Ucapan selamat dan kebahagiaan bisa dari mana saja. Tanpa jabatan-jabatan tangan atau pelukan-pelukan hangat, masih ada
                     simpul-simpul senyum dan doa-doa baik yang kami harapkan.

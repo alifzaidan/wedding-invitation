@@ -2,6 +2,7 @@
 
 import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
+import EndPage from '@/components/core/EndPage';
 import GalleryPage from '@/components/core/GalleryPage';
 import ProfilePage from '@/components/core/ProfilePage';
 import RsvpPage from '@/components/core/RsvpPage';
@@ -32,6 +33,7 @@ export default function Home() {
             <StoryPage />
             <RsvpPage />
             <WishesPage />
+            <EndPage />
         </main>
     );
 }

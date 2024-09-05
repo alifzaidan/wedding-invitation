@@ -24,7 +24,7 @@ export default function ProfilePage() {
             </div>
             <div className="flex lg:flex-row flex-col justify-evenly items-center gap-12">
                 <div className="text-center text-primary">
-                    <div className="relative w-72 mx-auto mb-6 -z-10">
+                    <div className="relative w-72 mx-auto mb-6">
                         <Image src={'/assets/img/flower-5.png'} alt="Flower" width={1000} height={1000} className="absolute w-44 -top-4 -left-6" />
                         <Image
                             src={'/assets/img/izza.jpg'}
@@ -49,7 +49,7 @@ export default function ProfilePage() {
                 </div>
                 <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-32" />
                 <div className="text-center text-primary">
-                    <div className="relative w-72 mx-auto mb-6 -z-10">
+                    <div className="relative w-72 mx-auto mb-6">
                         <Image
                             src={'/assets/img/flower-5.png'}
                             alt="Flower"
