@@ -1,5 +1,6 @@
 import { Tangerine, Vidaloka } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 import { GrMapLocation } from 'react-icons/gr';
 import { PiMapPinAreaFill } from 'react-icons/pi';
 
@@ -30,10 +31,15 @@ export default function SchedulePage() {
                     <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
                 </div>
 
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
+                <Link
+                    href={'https://maps.app.goo.gl/WKpqgLpN7duc26qM7'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
+                >
                     <GrMapLocation size={20} />
                     <p>Google Maps</p>
-                </button>
+                </Link>
             </div>
             <div className="flex flex-col items-center justify-center text-center gap-4 px-4 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>RESEPSI</h1>
@@ -45,14 +51,19 @@ export default function SchedulePage() {
                 <PiMapPinAreaFill size={36} />
                 <div className="sm:mb-4 mb-2">
                     <p className="sm:text-lg text-sm">Bertempat di :</p>
-                    <p className="sm:text-lg text-sm">Rumah Mempelai Pria</p>
+                    <p className="sm:text-lg text-sm">Rumah Mempelai Wanita</p>
                     <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
                 </div>
 
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
+                <Link
+                    href={'https://maps.app.goo.gl/WKpqgLpN7duc26qM7'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
+                >
                     <GrMapLocation size={20} />
                     <p>Google Maps</p>
-                </button>
+                </Link>
             </div>
             <Image src={'/assets/img/flower-6.png'} alt="Flower" width={1000} height={1000} className="absolute md:w-60 w-36 top-28 left-0" />
             <Image

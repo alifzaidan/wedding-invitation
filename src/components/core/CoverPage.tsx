@@ -55,7 +55,7 @@ export default function CoverPage() {
                 <p className="md:text-sm text-xs italic">*mohon maaf bila ada kesalahan penulisan nama dan gelar</p>
                 <button
                     onClick={handleOpenInvitation}
-                    className="flex gap-2 items-center justify-center mt-2 bg-primary text-white md:text-base text-sm py-2 px-4 rounded-full transition duration-200 md:hover:bg-red-800"
+                    className="flex gap-2 items-center justify-center mt-2 bg-primary text-white md:text-base text-sm py-2 px-4 rounded-full transition duration-200 md:hover:bg-opacity-90"
                 >
                     <IoMailOpenOutline size={20} />
                     <p>Buka Undangan</p>

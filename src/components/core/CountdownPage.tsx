@@ -1,5 +1,9 @@
+'use client';
+
+import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import { Tangerine, Vidaloka } from 'next/font/google';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { HiDotsHorizontal } from 'react-icons/hi';
 import { MdDateRange } from 'react-icons/md';
 
@@ -14,6 +18,32 @@ const vidaloka = Vidaloka({
 });
 
 export default function CountdownPage() {
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
+
+    useEffect(() => {
+        const targetDate = new Date('2024-11-06T09:00:00+07:00');
+        const updateCountdown = () => {
+            const now = new Date();
+            const difference = targetDate.getTime() - now.getTime();
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+                setTimeLeft({ days, hours, minutes, seconds });
+            } else {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+            }
+        };
+        const intervalId = setInterval(updateCountdown, 1000);
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <div className="flex justify-center items-center sm:p-16 p-6 bg-primary">
             <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-8 bg-secondary h-full w-full sm:rounded-3xl rounded-2xl text-primary">
@@ -35,26 +65,34 @@ export default function CountdownPage() {
                 </div>
                 <div className="grid grid-cols-4 md:gap-4 gap-2 w-full text-secondary">
                     <div className="bg-primary sm:rounded-2xl rounded-lg md:p-6 p-4">
-                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>27</h3>
+                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>{timeLeft.days}</h3>
                         <p className="md:text-lg text-sm">Hari</p>
                     </div>
                     <div className="bg-primary sm:rounded-2xl rounded-lg md:p-6 p-4">
-                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>10</h3>
+                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>{timeLeft.hours}</h3>
                         <p className="md:text-lg text-sm">Jam</p>
                     </div>
                     <div className="bg-primary sm:rounded-2xl rounded-lg md:p-6 p-4">
-                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>05</h3>
+                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>{timeLeft.minutes}</h3>
                         <p className="md:text-lg text-sm">Menit</p>
                     </div>
                     <div className="bg-primary sm:rounded-2xl rounded-lg md:p-6 p-4">
-                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>39</h3>
+                        <h3 className={`${vidaloka.className} md:text-6xl text-2xl`}>{timeLeft.seconds}</h3>
                         <p className="md:text-lg text-sm">Detik</p>
                     </div>
                 </div>
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
-                    <MdDateRange size={20} />
-                    <p>Tambahkan ke Kalender</p>
-                </button>
+
+                <AddToCalendarButton
+                    name="Wedding of Izza & Risky"
+                    options={['Apple', 'Google', 'Yahoo', 'Outlook.com']}
+                    location="Ds. Blongko Kec. Ngetos Kab. Nganjuk"
+                    startDate="2024-11-06"
+                    startTime="09:00"
+                    endTime="12:00"
+                    timeZone="Asia/Jakarta"
+                    buttonStyle="round"
+                    label="Tambahkan ke Kalender"
+                ></AddToCalendarButton>
             </div>
         </div>
     );
