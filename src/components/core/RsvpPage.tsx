@@ -20,7 +20,7 @@ export default function RsvpPage() {
                     Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih, Anda dapat memberi
                     kado secara cashless.
                 </p>
-                <button className="flex gap-2 items-center justify-center mt-2 bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-orange-200">
+                <button className="flex gap-2 items-center justify-center mt-2 bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
                     <MdOutlineCardGiftcard size={20} />
                     <p>Kirim Hadiah</p>
                 </button>
@@ -95,7 +95,7 @@ export default function RsvpPage() {
                     </div>
                     <button
                         type="submit"
-                        className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-orange-200"
+                        className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
                     >
                         <GrSend size={20} />
                         <p>Submit RSVP</p>

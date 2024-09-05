@@ -30,7 +30,7 @@ export default function SchedulePage() {
                     <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
                 </div>
 
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-red-800">
+                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
                     <GrMapLocation size={20} />
                     <p>Google Maps</p>
                 </button>
@@ -49,7 +49,7 @@ export default function SchedulePage() {
                     <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
                 </div>
 
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-red-800">
+                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
                     <GrMapLocation size={20} />
                     <p>Google Maps</p>
                 </button>

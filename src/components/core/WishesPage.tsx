@@ -64,7 +64,7 @@ export default function WishesPage() {
                     </div>
                     <button
                         type="submit"
-                        className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-orange-200"
+                        className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-70"
                     >
                         <GrSend size={20} />
                         <p>Kirimkan Ucapan</p>
@@ -76,12 +76,15 @@ export default function WishesPage() {
                             <RiUser3Fill className="text-primary sm:text-2xl text-xl" />
                         </div>
                         <div className="w-full bg-secondary rounded-2xl text-primary sm:px-6 px-4 py-3 text-left">
-                            <div className="flex gap-4 items-center md:mb-4 mb-2">
-                                <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Alip</h1>
-                                <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
-                                    <FaCheckCircle className="sm:text-sm text-xs" />
-                                    <p className="sm:text-sm text-xs">Hadir</p>
+                            <div className="flex gap-4 justify-between items-center md:mb-4 mb-2">
+                                <div className="flex gap-4 items-center">
+                                    <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Alip</h1>
+                                    <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
+                                        <FaCheckCircle className="sm:text-sm text-xs" />
+                                        <p className="sm:text-sm text-xs">Hadir</p>
+                                    </div>
                                 </div>
+                                <p className="sm:text-base text-xs">05 . 11 . 2024</p>
                             </div>
                             <p className="sm:text-lg text-xs">Selamat menempuh hidup baru. Semoga sakinah mawadah warohmah</p>
                         </div>
@@ -91,12 +94,15 @@ export default function WishesPage() {
                             <RiUser3Fill className="text-primary sm:text-2xl text-xl" />
                         </div>
                         <div className="w-full bg-secondary rounded-2xl text-primary sm:px-6 px-4 py-3 text-left">
-                            <div className="flex gap-4 items-center md:mb-4 mb-2">
-                                <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Enggar</h1>
-                                <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
-                                    <FaCheckCircle className="sm:text-sm text-xs" />
-                                    <p className="sm:text-sm text-xs">Hadir</p>
+                            <div className="flex gap-4 justify-between items-center md:mb-4 mb-2">
+                                <div className="flex gap-4 items-center">
+                                    <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Enggar</h1>
+                                    <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
+                                        <FaCheckCircle className="sm:text-sm text-xs" />
+                                        <p className="sm:text-sm text-xs">Hadir</p>
+                                    </div>
                                 </div>
+                                <p className="sm:text-base text-xs">05 . 11 . 2024</p>
                             </div>
                             <p className="sm:text-lg text-xs">Selamat menempuh hidup baru. Semoga sakinah mawadah warohmah</p>
                         </div>
@@ -106,12 +112,15 @@ export default function WishesPage() {
                             <RiUser3Fill className="text-primary sm:text-2xl text-xl" />
                         </div>
                         <div className="w-full bg-secondary rounded-2xl text-primary sm:px-6 px-4 py-3 text-left">
-                            <div className="flex gap-4 items-center md:mb-4 mb-2">
-                                <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Thoriq</h1>
-                                <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
-                                    <FaCheckCircle className="sm:text-sm text-xs" />
-                                    <p className="sm:text-sm text-xs">Hadir</p>
+                            <div className="flex gap-4 justify-between items-center md:mb-4 mb-2">
+                                <div className="flex gap-4 items-center">
+                                    <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Thoriq</h1>
+                                    <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
+                                        <FaCheckCircle className="sm:text-sm text-xs" />
+                                        <p className="sm:text-sm text-xs">Hadir</p>
+                                    </div>
                                 </div>
+                                <p className="sm:text-base text-xs">05 . 11 . 2024</p>
                             </div>
                             <p className="sm:text-lg text-xs">Selamat menempuh hidup baru. Semoga sakinah mawadah warohmah</p>
                         </div>
@@ -121,12 +130,15 @@ export default function WishesPage() {
                             <RiUser3Fill className="text-primary sm:text-2xl text-xl" />
                         </div>
                         <div className="w-full bg-secondary rounded-2xl text-primary sm:px-6 px-4 py-3 text-left">
-                            <div className="flex gap-4 items-center md:mb-4 mb-2">
-                                <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Imam</h1>
-                                <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
-                                    <FaCheckCircle className="sm:text-sm text-xs" />
-                                    <p className="sm:text-sm text-xs">Hadir</p>
+                            <div className="flex gap-4 justify-between items-center md:mb-4 mb-2">
+                                <div className="flex gap-4 items-center">
+                                    <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>Imam</h1>
+                                    <div className="flex items-center gap-2 bg-primary text-secondary rounded-lg px-2 py-1">
+                                        <FaCheckCircle className="sm:text-sm text-xs" />
+                                        <p className="sm:text-sm text-xs">Hadir</p>
+                                    </div>
                                 </div>
+                                <p className="sm:text-base text-xs">05 . 11 . 2024</p>
                             </div>
                             <p className="sm:text-lg text-xs">Selamat menempuh hidup baru. Semoga sakinah mawadah warohmah</p>
                         </div>

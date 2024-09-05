@@ -42,7 +42,7 @@ export default function ProfilePage() {
                         href={'https://www.instagram.com/zaidanaliff_'}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-red-800"
+                        className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-opacity-90"
                     >
                         <FaInstagram size={24} />
                     </Link>
@@ -73,7 +73,7 @@ export default function ProfilePage() {
                         href={'https://www.instagram.com/zaidanaliff_'}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-red-800"
+                        className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-opacity-90"
                     >
                         <FaInstagram size={24} />
                     </Link>

@@ -51,7 +51,7 @@ export default function CountdownPage() {
                         <p className="md:text-lg text-sm">Detik</p>
                     </div>
                 </div>
-                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-red-800">
+                <button className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90">
                     <MdDateRange size={20} />
                     <p>Tambahkan ke Kalender</p>
                 </button>
