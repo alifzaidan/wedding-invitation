@@ -46,7 +46,7 @@ export default function CountdownPage() {
 
     return (
         <div className="flex justify-center items-center sm:p-16 p-6 bg-primary">
-            <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-8 bg-secondary h-full w-full sm:rounded-3xl rounded-2xl text-primary">
+            <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-8 bg-secondary border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <div className="">
                     <Image src={'/assets/img/castle.png'} alt="Castle" width={1000} height={1000} className="w-52" />
                     <Image src={'/assets/img/flower-4.png'} alt="Flower" width={1000} height={1000} className="w-52" />

@@ -54,8 +54,9 @@ export default function WishesPage() {
                             name="attendees"
                             className="w-full px-4 py-2 mb-4 border border-secondary rounded-md text-primary sm:text-lg text-sm focus:outline-none focus:ring-primary focus:border-primary"
                             required
+                            defaultValue="0"
                         >
-                            <option value="" disabled selected>
+                            <option value="0" disabled>
                                 Konfirmasi kehadiran Anda
                             </option>
                             <option value="yes">Hadir</option>
