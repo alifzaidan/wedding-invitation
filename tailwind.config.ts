@@ -12,6 +12,9 @@ const config: Config = {
             backgroundImage: {
                 pattern: "url('/assets/img/bg-pattern.png')",
             },
+            animation: {
+                'spin-slow': 'spin 2.5s linear infinite',
+            },
         },
     },
     plugins: [],
