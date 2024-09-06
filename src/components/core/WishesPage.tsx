@@ -15,7 +15,7 @@ const vidaloka = Vidaloka({
 
 export default function WishesPage() {
     return (
-        <div className="sm:p-12 p-6 bg-primary">
+        <div id="ucapan" className="sm:p-12 p-6 bg-primary">
             <div className="text-center md:px-12 px-2 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Best Wishes</h1>
                 <p className="sm:text-lg text-sm lg:px-32 mt-2 mb-4">

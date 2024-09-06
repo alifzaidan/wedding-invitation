@@ -16,7 +16,7 @@ const vidaloka = Vidaloka({
 
 export default function SchedulePage() {
     return (
-        <div className="relative flex lg:flex-row flex-col justify-center items-center sm:gap-10 gap-6 sm:p-12 p-6 bg-primary">
+        <div id="jadwal" className="relative flex lg:flex-row flex-col justify-center items-center sm:gap-10 gap-6 sm:p-12 p-6 bg-primary">
             <div className="flex flex-col items-center justify-center text-center gap-4 px-4 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>AKAD NIKAH</h1>
                 <p className="sm:text-lg text-sm sm:mb-4 mb-2">Acara Insya Allah akan dilaksanakan pada:</p>

@@ -15,7 +15,7 @@ const vidaloka = Vidaloka({
 
 export default function ProfilePage() {
     return (
-        <div className="sm:py-16 py-8 sm:px-8 px-4">
+        <div id="tentang-kami" className="sm:py-16 py-8 sm:px-8 px-4">
             <div className="text-center text-primary sm:mb-12 mb-8">
                 <h1 className={`${tangerine.className} sm:text-6xl text-4xl mb-4`}>Assalamualaikum Wr. Wb</h1>
                 <p className="sm:text-lg text-sm">

@@ -11,6 +11,7 @@ import StartPage from '@/components/core/StartPage';
 import StoryPage from '@/components/core/StoryPage';
 import WishesPage from '@/components/core/WishesPage';
 import BackgroundAudio from '@/components/layout/BackgroundAudio';
+import BottomNavbar from '@/components/layout/BottomNavbar';
 
 export default function Home() {
     // useEffect(() => {
@@ -36,6 +37,7 @@ export default function Home() {
             <WishesPage />
             <EndPage />
             <BackgroundAudio />
+            <BottomNavbar />
         </main>
     );
 }

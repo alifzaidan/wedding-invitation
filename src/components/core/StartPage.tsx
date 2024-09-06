@@ -14,7 +14,7 @@ const vidaloka = Vidaloka({
 
 export default function StartPage() {
     return (
-        <section className="relative flex flex-col items-center sm:gap-3 gap-2 pt-40 bg-pattern text-center w-full pb-72 -z-10">
+        <section id="home" className="relative flex flex-col items-center sm:gap-3 gap-2 pt-40 bg-pattern text-center w-full pb-72 -z-10">
             <Image src={'/assets/img/flower-1.png'} alt="Flower" width={1000} height={1000} className="absolute top-0 sm:w-1/2 " />
             <Image
                 src={'/assets/img/flower-2.png'}
