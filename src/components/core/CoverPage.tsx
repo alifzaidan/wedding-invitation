@@ -2,6 +2,7 @@
 
 import { Tangerine } from 'next/font/google';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { IoMailOpenOutline } from 'react-icons/io5';
 
@@ -12,6 +13,8 @@ const tangerine = Tangerine({
 
 export default function CoverPage() {
     const [isCoverVisible, setIsCoverVisible] = useState(true);
+    const searchParams = useSearchParams();
+    const recipientName = searchParams.get('to') || 'penerima';
 
     const handleOpenInvitation = () => {
         setIsCoverVisible(false);
@@ -51,7 +54,7 @@ export default function CoverPage() {
                 <h1 className="md:text-lg tracking-widest">WEDDING INVITATION</h1>
                 <h2 className={`${tangerine.className} md:text-8xl text-6xl font-bold sm:mb-6 mb-3 text-primary`}>Izza & Risky</h2>
                 <p className="md:text-base sm:text-sm text-xs">Kepada Yth. Bapak/Ibu/Saudara/i :</p>
-                <h3 className="text-xl font-bold">ALIF</h3>
+                <h3 className="text-xl font-bold uppercase">{recipientName}</h3>
                 <p className="md:text-sm text-xs italic">*mohon maaf bila ada kesalahan penulisan nama dan gelar</p>
                 <button
                     onClick={handleOpenInvitation}
