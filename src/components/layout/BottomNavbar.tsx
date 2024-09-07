@@ -1,7 +1,4 @@
 import Link from 'next/link';
-import { BsCalendar2HeartFill } from 'react-icons/bs';
-import { GiLoveLetter, GiLovers } from 'react-icons/gi';
-import { RiHomeHeartFill } from 'react-icons/ri';
 import { TbCalendarMonth, TbHomeHeart, TbMessageHeart, TbPhotoSquareRounded, TbUsers } from 'react-icons/tb';
 
 export default function BottomNavbar() {

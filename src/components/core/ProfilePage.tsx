@@ -35,11 +35,11 @@ export default function ProfilePage() {
                         />
                     </div>
                     <h2 className={`${tangerine.className} md:text-8xl text-6xl font-bold`}>Izza</h2>
-                    <p className={`${vidaloka.className} sm:text-4xl text-2xl text-tertiary mb-4`}>Binti Izzatul Munthamimah</p>
+                    <p className={`${vidaloka.className} sm:text-4xl text-2xl text-tertiary mb-4`}>Binti Izatul Munthamimah</p>
                     <p className="sm:text-lg text-sm">Putri dari</p>
                     <p className="sm:text-lg text-sm">Bapak Abdul Aziz (Alm) & Ibu Siti Munawaroh</p>
                     <Link
-                        href={'https://www.instagram.com/zaidanaliff_'}
+                        href={'https://www.instagram.com/iizzatulmunthamimah_'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-opacity-90"
@@ -70,7 +70,7 @@ export default function ProfilePage() {
                     <p className="sm:text-lg text-sm">Putra dari</p>
                     <p className="sm:text-lg text-sm">Bapak Asnan & Ibu Istiqomah</p>
                     <Link
-                        href={'https://www.instagram.com/zaidanaliff_'}
+                        href={'https://www.instagram.com/risky_putra09'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-fit mx-auto flex items-center justify-center mt-4 bg-primary text-secondary p-3 rounded-full transition duration-200 md:hover:bg-opacity-90"

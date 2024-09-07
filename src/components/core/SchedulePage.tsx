@@ -16,14 +16,21 @@ const vidaloka = Vidaloka({
 
 export default function SchedulePage() {
     return (
-        <div id="jadwal" className="relative flex lg:flex-row flex-col justify-center items-center sm:gap-10 gap-6 sm:p-12 p-6 bg-primary">
+        <div id="jadwal" className="relative flex lg:flex-row flex-col justify-center sm:gap-10 gap-6 sm:p-12 p-6 bg-primary">
             <div className="flex flex-col items-center justify-center text-center gap-4 px-4 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
-                <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>AKAD NIKAH</h1>
+                <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>AKAD & RESEPSI</h1>
                 <p className="sm:text-lg text-sm sm:mb-4 mb-2">Acara Insya Allah akan dilaksanakan pada:</p>
                 <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Rabu</h1>
                 <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>06 . 11 . 2024</h1>
                 <hr className="border border-primary h-12" />
-                <p className="sm:text-lg text-sm">Pukul 09.00 WIB - Selesai</p>
+                <div className="flex gap-2 items-center">
+                    <p className="sm:text-lg text-sm font-bold">Akad :</p>
+                    <p className="sm:text-lg text-sm">Pukul 09.00 WIB - Selesai</p>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <p className="sm:text-lg text-sm font-bold">Resepsi :</p>
+                    <p className="sm:text-lg text-sm">Pukul 09.00 WIB - Selesai</p>
+                </div>
                 <PiMapPinAreaFill size={36} />
                 <div className="sm:mb-4 mb-2">
                     <p className="sm:text-lg text-sm">Bertempat di :</p>
@@ -42,7 +49,7 @@ export default function SchedulePage() {
                 </Link>
             </div>
             <div className="flex flex-col items-center justify-center text-center gap-4 px-4 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
-                <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>RESEPSI</h1>
+                <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>UNDUH MANTU</h1>
                 <p className="sm:text-lg text-sm sm:mb-4 mb-2">Acara Insya Allah akan dilaksanakan pada:</p>
                 <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Kamis</h1>
                 <h1 className={`${vidaloka.className} sm:text-5xl text-3xl`}>07 . 11 . 2024</h1>
@@ -51,7 +58,7 @@ export default function SchedulePage() {
                 <PiMapPinAreaFill size={36} />
                 <div className="sm:mb-4 mb-2">
                     <p className="sm:text-lg text-sm">Bertempat di :</p>
-                    <p className="sm:text-lg text-sm">Rumah Mempelai Wanita</p>
+                    <p className="sm:text-lg text-sm">Rumah Mempelai Pria</p>
                     <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
                 </div>
 

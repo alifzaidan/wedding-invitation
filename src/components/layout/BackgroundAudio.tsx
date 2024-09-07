@@ -23,7 +23,7 @@ export default function BackgroundAudio() {
     return (
         <div>
             <audio ref={audioRef} loop>
-                <source src="/assets/audio/bermuara.mp3" type="audio/mpeg" />
+                <source src="/assets/audio/kahitna-menikahimu.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
             <button onClick={toggleAudio} className="fixed bottom-4 left-4 p-2 shadow-xl bg-primary rounded-full">

@@ -19,18 +19,28 @@ const vidaloka = Vidaloka({
 
 export default function RsvpPage() {
     const [isGiftOptionOpen, setIsGiftOptionOpen] = useState(false);
-    const [accountText, setAccountText] = useState('Salin No. Rekening');
+    const [accountText1, setAccountText1] = useState('Salin No. Rekening');
+    const [accountText2, setAccountText2] = useState('Salin No. Rekening');
     const [addressText, setAddressText] = useState('Salin Alamat');
 
     const toggleGiftOption = () => {
         setIsGiftOptionOpen(!isGiftOptionOpen);
     };
 
-    const handleCopyAccount = () => {
-        navigator.clipboard.writeText('123001006072508').then(() => {
-            setAccountText('Berhasil Disalin');
+    const handleCopyAccount1 = () => {
+        navigator.clipboard.writeText('1710015093597').then(() => {
+            setAccountText1('Berhasil Disalin');
             setTimeout(() => {
-                setAccountText('Salin No. Rekening');
+                setAccountText1('Salin No. Rekening');
+            }, 2000);
+        });
+    };
+
+    const handleCopyAccount2 = () => {
+        navigator.clipboard.writeText('1710013375731').then(() => {
+            setAccountText2('Berhasil Disalin');
+            setTimeout(() => {
+                setAccountText2('Salin No. Rekening');
             }, 2000);
         });
     };
@@ -146,20 +156,37 @@ export default function RsvpPage() {
                 {isGiftOptionOpen && (
                     <>
                         <div className="w-full flex flex-col items-start gap-2 sm:p-6 p-4 bg-secondary border-8 border-primary shadow-2xl text-primary rounded-2xl">
-                            <Image src={'/assets/img/logo-bri.png'} alt="Bank BRI" width={1000} height={1000} className="w-32 self-end" />
+                            <Image src={'/assets/img/logo-mandiri.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-32 self-end" />
 
-                            <Image src={'/assets/img/chip-atm.png'} alt="Bank BRI" width={1000} height={1000} className="w-12" />
+                            <Image src={'/assets/img/chip-atm.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-12" />
                             <div className="text-left">
-                                <p className="content-start sm:text-lg text-sm font-bold">123001006072508</p>
-                                <p className="content-start sm:text-lg text-sm font-bold">Enggarani Wahyu Ekaputri</p>
+                                <p className="content-start sm:text-lg text-sm font-bold">1710 0150 9359 7</p>
+                                <p className="content-start sm:text-lg text-sm font-bold">Binti Izatul Munthamimah</p>
                             </div>
 
                             <button
-                                onClick={handleCopyAccount}
+                                onClick={handleCopyAccount1}
                                 className="flex self-center gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
                             >
                                 <MdContentCopy size={20} />
-                                <p>{accountText}</p>
+                                <p>{accountText1}</p>
+                            </button>
+                        </div>
+                        <div className="w-full flex flex-col items-start gap-2 sm:p-6 p-4 bg-secondary border-8 border-primary shadow-2xl text-primary rounded-2xl">
+                            <Image src={'/assets/img/logo-mandiri.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-32 self-end" />
+
+                            <Image src={'/assets/img/chip-atm.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-12" />
+                            <div className="text-left">
+                                <p className="content-start sm:text-lg text-sm font-bold">1710 0133 7573 1</p>
+                                <p className="content-start sm:text-lg text-sm font-bold">Risky Dwi Syah Putra</p>
+                            </div>
+
+                            <button
+                                onClick={handleCopyAccount2}
+                                className="flex self-center gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
+                            >
+                                <MdContentCopy size={20} />
+                                <p>{accountText2}</p>
                             </button>
                         </div>
                         <div className="w-full flex flex-col items-center gap-2 sm:p-6 p-4 bg-secondary border-8 border-primary shadow-2xl text-primary rounded-2xl">

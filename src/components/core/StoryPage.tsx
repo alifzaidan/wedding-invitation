@@ -27,10 +27,11 @@ export default function StoryPage() {
                         className="lg:w-1/3 w-full mx-auto sm:rounded-2xl rounded-lg"
                     />
                     <div className="lg:text-left text-center md:space-y-4 space-y-2">
-                        <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>AWAL BERTEMU</h1>
+                        <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>PERTEMUAN</h1>
                         <p className="sm:text-lg text-sm italic">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ex libero, ad officiis aliquid provident sequi mollitia
-                            explicabo alias reiciendis, facere quibusdam velit voluptatem, natus praesentium quasi dolore cupiditate eos?
+                            Tidak ada yang kebetulan di dunia ini. semua sudah tersusun rapi oleh sang maha kuasa, kita tidak bisa memilih kepada
+                            siapa kita akan jatuh cinta, kami bertemu pada tahun 2015, tepatnya saat kami sedang menempuh pendidikan di sekolah
+                            menengah yang sama, tidak ada yang pernah menyangka bahwa pertemuan itu membawa kami sejauh ini.
                         </p>
                     </div>
                 </div>
@@ -43,10 +44,26 @@ export default function StoryPage() {
                         className="lg:w-1/3 w-full mx-auto sm:rounded-2xl rounded-lg"
                     />
                     <div className="lg:text-left text-center md:space-y-4 space-y-2">
-                        <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>BERTUNANGAN</h1>
+                        <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>LAMARAN</h1>
                         <p className="sm:text-lg text-sm italic">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ex libero, ad officiis aliquid provident sequi mollitia
-                            explicabo alias reiciendis, facere quibusdam velit voluptatem, natus praesentium quasi dolore cupiditate eos?
+                            Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat, mulai 2018 kami cukup sering
+                            berkomunikasi, bertemu, dan alam seakan terus berkonspirasi untuk menyatukan kami berdua.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex lg:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6">
+                    <Image
+                        src={'/assets/img/story.webp'}
+                        alt="Our Story"
+                        width={1000}
+                        height={1000}
+                        className="lg:w-1/3 w-full mx-auto sm:rounded-2xl rounded-lg"
+                    />
+                    <div className="lg:text-left text-center md:space-y-4 space-y-2">
+                        <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>PENDEKATAN</h1>
+                        <p className="sm:text-lg text-sm italic">
+                            Kehendaknya menuntun kami pada sebuah pertemuan yang tak pernah di sangka hingga akhirnya membawa kami pada sebuah ikatan
+                            suci yang dicintai-Nya. kami melangsungkan acara lamaran di bulan Mei 2024 lalu.
                         </p>
                     </div>
                 </div>
@@ -61,8 +78,8 @@ export default function StoryPage() {
                     <div className="lg:text-left text-center md:space-y-4 space-y-2">
                         <h1 className={`${vidaloka.className} sm:text-2xl text-lg`}>MENIKAH</h1>
                         <p className="sm:text-lg text-sm italic">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ex libero, ad officiis aliquid provident sequi mollitia
-                            explicabo alias reiciendis, facere quibusdam velit voluptatem, natus praesentium quasi dolore cupiditate eos?
+                            Kami memutuskan untuk mengikrarkan janji suci pernikahan di bulan ini. insyaAllah sebagaimana yang pernah dikatakan oleh
+                            saydina Ali bin Abi Thalib &quot;Apa yang menjadi takdirmu akan menemukan jalannya untuk menemukanmu&quot;.
                         </p>
                     </div>
                 </div>
