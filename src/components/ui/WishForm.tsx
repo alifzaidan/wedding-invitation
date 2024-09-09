@@ -64,7 +64,7 @@ export default function WishForm() {
                     className="w-full px-4 py-2 mb-4 border border-secondary rounded-md text-primary sm:text-lg text-sm focus:outline-none focus:ring-primary focus:border-primary"
                     required
                 >
-                    <option value="" disabled>
+                    <option value="" disabled selected>
                         Konfirmasi kehadiran Anda*
                     </option>
                     <option value="true">Hadir</option>

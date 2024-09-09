@@ -22,3 +22,13 @@ model Wishes {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Rsvp {
+  id        String   @id @default(cuid())
+  name      String
+  attendees Boolean
+  numAttendees Int
+  address   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
