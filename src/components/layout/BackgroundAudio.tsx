@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { RiNeteaseCloudMusicLine } from 'react-icons/ri';
 

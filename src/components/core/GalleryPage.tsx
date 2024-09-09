@@ -1,3 +1,5 @@
+'use client';
+
 import { Vidaloka } from 'next/font/google';
 import Image from 'next/image';
 import { useState } from 'react';

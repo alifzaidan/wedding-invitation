@@ -1,5 +1,3 @@
-'use client';
-
 import CountdownPage from '@/components/core/CountdownPage';
 import CoverPage from '@/components/core/CoverPage';
 import EndPage from '@/components/core/EndPage';
