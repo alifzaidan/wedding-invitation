@@ -1,11 +1,11 @@
 'use client';
 
 import { Tangerine } from 'next/font/google';
-import Image from 'next/image';
 import { Suspense, useEffect, useState } from 'react';
 import { IoMailOpenOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 const tangerine = Tangerine({
     subsets: ['latin'],
@@ -22,6 +22,8 @@ function RecipientName() {
     const recipientName = searchParams.get('to') || 'penerima';
     return <span>{recipientName}</span>;
 }
+
+const Image = dynamic(() => import('next/image'), { suspense: true });
 
 export default function CoverPage({ toggleAudio }: { toggleAudio: () => void }) {
     const [isCoverVisible, setIsCoverVisible] = useState(true);
