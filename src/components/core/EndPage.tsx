@@ -30,7 +30,7 @@ export default function EndPage() {
                     controls.start('hidden');
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0.3 }
         );
 
         if (currentRef) {
@@ -52,7 +52,7 @@ export default function EndPage() {
                     animate={controls}
                     transition={{ duration: 1 }}
                     variants={{ hidden: { opacity: 0, y: -100 }, visible: { opacity: 1, y: 0 } }}
-                    className="w-72 mx-auto mb-6"
+                    className="md:w-72 w-52 mx-auto mb-6"
                 >
                     <Image
                         src={'/assets/img/izza.jpg'}
