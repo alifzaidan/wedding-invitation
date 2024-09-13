@@ -2,10 +2,10 @@
 
 import { Tangerine } from 'next/font/google';
 import Image from 'next/image';
-import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { IoMailOpenOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import { useSearchParams } from 'next/navigation';
 
 const tangerine = Tangerine({
     subsets: ['latin'],
@@ -17,10 +17,14 @@ const contentVariants = {
     visible: { opacity: 1, scale: 1 },
 };
 
-export default function CoverPage() {
-    const [isCoverVisible, setIsCoverVisible] = useState(true);
+function RecipientName() {
     const searchParams = useSearchParams();
     const recipientName = searchParams.get('to') || 'penerima';
+    return <span>{recipientName}</span>;
+}
+
+export default function CoverPage() {
+    const [isCoverVisible, setIsCoverVisible] = useState(true);
 
     const handleOpenInvitation = () => {
         setIsCoverVisible(false);
@@ -102,6 +106,7 @@ export default function CoverPage() {
                 >
                     Kepada Yth. Bapak/Ibu/Saudara/i :
                 </motion.p>
+
                 <motion.h3
                     initial="hidden"
                     animate="visible"
@@ -109,8 +114,11 @@ export default function CoverPage() {
                     variants={contentVariants}
                     className="text-xl font-bold uppercase"
                 >
-                    {recipientName}
+                    <Suspense fallback={<span>Loading...</span>}>
+                        <RecipientName />
+                    </Suspense>
                 </motion.h3>
+
                 <motion.p
                     initial="hidden"
                     animate="visible"
