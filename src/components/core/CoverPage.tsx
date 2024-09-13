@@ -23,11 +23,12 @@ function RecipientName() {
     return <span>{recipientName}</span>;
 }
 
-export default function CoverPage() {
+export default function CoverPage({ toggleAudio }: { toggleAudio: () => void }) {
     const [isCoverVisible, setIsCoverVisible] = useState(true);
 
     const handleOpenInvitation = () => {
         setIsCoverVisible(false);
+        toggleAudio();
     };
 
     useEffect(() => {

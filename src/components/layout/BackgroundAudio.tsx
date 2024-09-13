@@ -1,17 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState, forwardRef, useImperativeHandle } from 'react';
 import { RiNeteaseCloudMusicLine } from 'react-icons/ri';
 
-export default function BackgroundAudio() {
+const BackgroundAudio = forwardRef((props, ref) => {
     const audioRef = useRef<HTMLAudioElement>(null);
-    const [isPlaying, setIsPlaying] = useState(true);
-
-    useEffect(() => {
-        if (audioRef.current) {
-            audioRef.current.play();
-        }
-    }, []);
+    const [isPlaying, setIsPlaying] = useState(false); // Mulai dengan audio tidak bermain
 
     const toggleAudio = () => {
         if (isPlaying) {
@@ -21,6 +15,10 @@ export default function BackgroundAudio() {
         }
         setIsPlaying(!isPlaying);
     };
+
+    useImperativeHandle(ref, () => ({
+        toggleAudio,
+    }));
 
     return (
         <div>
@@ -33,4 +31,8 @@ export default function BackgroundAudio() {
             </button>
         </div>
     );
-}
+});
+
+BackgroundAudio.displayName = 'BackgroundAudio';
+
+export default BackgroundAudio;

@@ -12,9 +12,11 @@ import StoryPage from '@/components/core/StoryPage';
 import WishesPage from '@/components/core/WishesPage';
 import BackgroundAudio from '@/components/layout/BackgroundAudio';
 import BottomNavbar from '@/components/layout/BottomNavbar';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Home() {
+    const audioRef = useRef<{ toggleAudio: () => void }>(null);
+
     useEffect(() => {
         const handleContextMenu = (e: any) => {
             e.preventDefault();
@@ -27,7 +29,7 @@ export default function Home() {
 
     return (
         <main className="relative overflow-hidden">
-            <CoverPage />
+            <CoverPage toggleAudio={() => audioRef.current?.toggleAudio()} />
             <StartPage />
             <CountdownPage />
             <ProfilePage />
@@ -37,7 +39,7 @@ export default function Home() {
             <RsvpPage />
             <WishesPage />
             <EndPage />
-            <BackgroundAudio />
+            <BackgroundAudio ref={audioRef} />
             <BottomNavbar />
         </main>
     );
