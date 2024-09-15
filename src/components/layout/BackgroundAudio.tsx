@@ -5,7 +5,7 @@ import { RiNeteaseCloudMusicLine } from 'react-icons/ri';
 
 const BackgroundAudio = forwardRef((props, ref) => {
     const audioRef = useRef<HTMLAudioElement>(null);
-    const [isPlaying, setIsPlaying] = useState(false); // Mulai dengan audio tidak bermain
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const toggleAudio = () => {
         if (isPlaying) {
@@ -26,7 +26,7 @@ const BackgroundAudio = forwardRef((props, ref) => {
                 <source src="/assets/audio/kahitna-menikahimu.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
-            <button onClick={toggleAudio} className="fixed bottom-4 left-4 p-2 shadow-xl bg-primary rounded-full">
+            <button onClick={toggleAudio} className="fixed bottom-4 left-4 p-2 shadow-xl bg-primary rounded-full z-10">
                 <RiNeteaseCloudMusicLine className={`text-secondary sm:text-4xl text-3xl ${isPlaying ? 'animate-spin-slow' : 'Play'}`} />
             </button>
         </div>

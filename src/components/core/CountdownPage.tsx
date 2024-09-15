@@ -77,7 +77,7 @@ export default function CountdownPage() {
     }, []);
 
     return (
-        <div ref={sectionRef} className="flex justify-center items-center sm:p-16 p-6 bg-primary">
+        <section ref={sectionRef} className="flex justify-center items-center sm:p-16 p-6 bg-primary">
             <div className="flex flex-col items-center justify-center text-center gap-6 lg:px-52 sm:px-24 px-4 sm:py-12 py-8 bg-secondary border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <motion.div
                     initial="hidden"
@@ -218,6 +218,6 @@ export default function CountdownPage() {
                     ></AddToCalendarButton>
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 }

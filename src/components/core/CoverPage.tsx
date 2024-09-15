@@ -43,7 +43,7 @@ export default function CoverPage({ toggleAudio }: { toggleAudio: () => void }) 
 
     return (
         <div
-            className={`fixed inset-0 h-screen sm:p-8 p-4 bg-pattern transition-transform duration-700 overflow-hidden z-20 ${
+            className={`fixed inset-0 h-screen sm:p-8 p-4 bg-pattern transition-transform duration-700 overflow-hidden z-50 ${
                 isCoverVisible ? 'translate-y-0' : '-translate-y-full'
             }`}
         >

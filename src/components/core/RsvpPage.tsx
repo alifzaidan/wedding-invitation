@@ -95,7 +95,7 @@ export default function RsvpPage() {
     };
 
     return (
-        <div ref={sectionRef} className="relative flex lg:flex-row flex-col justify-center  sm:gap-10 gap-6 sm:p-12 p-6">
+        <section ref={sectionRef} className="relative flex lg:flex-row flex-col justify-center  sm:gap-10 gap-6 sm:p-12 p-6">
             <div className="flex flex-col items-center justify-center text-center sm:gap-8 gap-4 sm:px-8 px-4 sm:py-12 py-8 bg-primary border-8 border-secondary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-secondary">
                 <motion.div
                     initial="hidden"
@@ -106,7 +106,7 @@ export default function RsvpPage() {
                     <div className="w-fit mx-auto flex items-center justify-center mb-4 bg-secondary text-primary p-3 rounded-full">
                         <PiFlowerLotusDuotone className="text-primary sm:text-4xl text-3xl" />
                     </div>
-                    <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Rsvp</h1>
+                    <h1 className={`${tangerine.className} sm:text-8xl text-6xl font-bold mb-4`}>Rsvp</h1>
                     <p className="sm:text-lg text-sm ">
                         Silahkan mengisi form RSVP berikut untuk memberitahukan kehadiran Anda pada acara pernikahan kami.
                     </p>
@@ -126,7 +126,7 @@ export default function RsvpPage() {
                     <div className="w-fit mx-auto flex items-center justify-center mb-4 bg-secondary text-primary p-3 rounded-full">
                         <MdOutlineCardGiftcard className="text-primary sm:text-4xl text-3xl" />
                     </div>
-                    <h1 className={`${tangerine.className} sm:text-8xl text-6xl`}>Wedding Gift</h1>
+                    <h1 className={`${tangerine.className} sm:text-8xl text-6xl font-bold mb-4`}>Wedding Gift</h1>
                     <p className="sm:text-lg text-sm sm:mb-4 mb-2">
                         Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih, Anda dapat
                         memberi kado secara cashless.
@@ -223,6 +223,6 @@ export default function RsvpPage() {
                     )}
                 </AnimatePresence>
             </div>
-        </div>
+        </section>
     );
 }

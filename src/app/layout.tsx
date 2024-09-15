@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="scroll-smooth">
-            <body className={`${alike.className} bg-pattern bg-cover select-none`}>{children}</body>
+            <body className={`${alike.className} select-none`}>{children}</body>
         </html>
     );
 }

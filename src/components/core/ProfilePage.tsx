@@ -52,20 +52,20 @@ export default function ProfilePage() {
     }, [controls]);
 
     return (
-        <div ref={sectionRef} id="tentang-kami" className="sm:py-16 py-8 sm:px-8 px-4">
+        <section ref={sectionRef} id="tentang-kami" className="relative sm:py-20 py-12 sm:px-8 px-4">
             <motion.div
                 initial="hidden"
                 animate={controls}
                 transition={{ duration: 1 }}
                 variants={{ hidden: { opacity: 0, y: -100 }, visible: { opacity: 1, y: 0 } }}
-                className="text-center text-primary sm:mb-12 mb-8"
+                className="text-center text-primary sm:mb-12 mb-8 z-10"
             >
-                <h1 className={`${tangerine.className} sm:text-6xl text-4xl mb-4`}>Assalamualaikum Wr. Wb</h1>
+                <h1 className={`${tangerine.className} sm:text-6xl text-4xl mb-4 font-bold`}>Assalamualaikum Wr. Wb</h1>
                 <p className="sm:text-lg text-sm">
                     Dengan memohon Rahmat & Ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:
                 </p>
             </motion.div>
-            <div className="flex lg:flex-row flex-col justify-evenly items-center gap-12">
+            <div className="flex lg:flex-row flex-col justify-evenly items-center md:gap-32 gap-12 z-10">
                 <div className="text-center text-primary">
                     <motion.div
                         initial="hidden"
@@ -110,7 +110,7 @@ export default function ProfilePage() {
                     transition={{ duration: 1 }}
                     variants={{ hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 } }}
                 >
-                    <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-32" />
+                    <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-28" />
                 </motion.div>
                 <div className="text-center text-primary">
                     <motion.div
@@ -157,6 +157,6 @@ export default function ProfilePage() {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

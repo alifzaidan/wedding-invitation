@@ -45,7 +45,7 @@ export default function EndPage() {
     }, [controls]);
 
     return (
-        <div ref={sectionRef} className="sm:gap-10 gap-6 sm:p-12 p-6">
+        <section ref={sectionRef} className="sm:gap-10 gap-6 sm:p-12 p-6">
             <div className="flex flex-col items-center justify-center text-center sm:gap-6 gap-4 sm:px-8 px-6 sm:pb-8 pb-24 pt-8 bg-primary border-8 border-secondary shadow-2xl h-full w-full sm:rounded-full rounded-full text-secondary">
                 <motion.div
                     initial="hidden"
@@ -91,6 +91,6 @@ export default function EndPage() {
                     Izza & Risky
                 </motion.h1>
             </div>
-        </div>
+        </section>
     );
 }

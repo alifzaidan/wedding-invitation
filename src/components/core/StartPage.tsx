@@ -51,12 +51,8 @@ export default function StartPage() {
     }, [controls]);
 
     return (
-        <section
-            id="home"
-            ref={sectionRef}
-            className="relative flex flex-col items-center sm:gap-3 gap-2 pt-40 bg-pattern text-center w-full pb-72 -z-10"
-        >
-            <Image src={'/assets/img/flower-1.png'} alt="Flower" width={1000} height={1000} className="absolute top-0 sm:w-1/2 " />
+        <section id="home" ref={sectionRef} className="relative flex flex-col items-center sm:gap-3 gap-2 pt-40 text-center w-full pb-72">
+            <Image src={'/assets/img/flower-1.png'} alt="Flower" width={1000} height={1000} className="absolute top-0 sm:w-1/2" />
             <Image
                 src={'/assets/img/flower-2.png'}
                 alt="Flower"
@@ -111,13 +107,13 @@ export default function StartPage() {
                 </motion.div>
             </div>
 
-            <Image
+            {/* <Image
                 src={'/assets/img/castle.png'}
                 alt="Castle"
                 width={1000}
                 height={1000}
                 className="absolute sm:opacity-60 xl:-bottom-44 md:-bottom-24 -bottom-12 md:w-1/2"
-            />
+            /> */}
         </section>
     );
 }

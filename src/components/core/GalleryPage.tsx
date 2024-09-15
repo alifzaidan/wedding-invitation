@@ -79,7 +79,7 @@ export default function GalleryPage() {
     };
 
     return (
-        <div ref={sectionRef} id="gallery" className="sm:py-16 py-8 sm:px-8 px-4 bg-gradient-to-br from-stone-700 to-stone-300">
+        <section ref={sectionRef} id="gallery" className="sm:py-16 py-8 sm:px-8 px-4 bg-gradient-to-br from-stone-700 to-stone-300">
             <div className="text-center text-white">
                 <motion.div
                     initial="hidden"
@@ -117,19 +117,19 @@ export default function GalleryPage() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full sm:w-2/3">
                         {images.slice(0, 8).map((src, index) => (
                             <motion.div
-                                key={index + 3}
+                                key={index}
                                 initial="hidden"
                                 animate={controls}
                                 transition={{ duration: 1 }}
                                 variants={contentVariants}
                                 className="bg-stone-200 md:rounded-xl rounded-lg overflow-hidden cursor-pointer"
-                                onClick={() => openLightbox(index + 3)}
+                                onClick={() => openLightbox(index)}
                             >
                                 <Image
                                     width={1000}
                                     height={1000}
                                     src={src}
-                                    alt={`Gallery Image ${index + 4}`}
+                                    alt={`Gallery Image ${index + 1}`}
                                     className="w-full h-full object-cover"
                                 />
                             </motion.div>
@@ -139,6 +139,6 @@ export default function GalleryPage() {
             </div>
 
             {isOpen && <Lightbox slides={images.map((src) => ({ src }))} open={isOpen} close={() => setIsOpen(false)} index={currentIndex} />}
-        </div>
+        </section>
     );
 }

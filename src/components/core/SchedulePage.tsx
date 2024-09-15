@@ -109,7 +109,7 @@ export default function SchedulePage() {
                     </div>
 
                     <Link
-                        href={'https://maps.app.goo.gl/WKpqgLpN7duc26qM7'}
+                        href={'https://maps.app.goo.gl/ZPex9sY2H6aafVzL6'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
@@ -151,14 +151,14 @@ export default function SchedulePage() {
                 >
                     <p className="sm:text-lg text-sm">Sewaktu-waktu</p>
                     <PiMapPinAreaFill size={36} />
-                    <div className="sm:mb-4 mb-2">
+                    <div className="sm:mb-4 mb-2 md:px-24 px-12">
                         <p className="sm:text-lg text-sm">Bertempat di :</p>
                         <p className="sm:text-lg text-sm">Rumah Mempelai Pria</p>
-                        <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
+                        <p className="sm:text-lg text-sm">Dsn. Prayungan Rt.01/Rw.05, Ds. Selorejo, Kecamatan Bagor, Kabupaten Nganjuk</p>
                     </div>
 
                     <Link
-                        href={'https://maps.app.goo.gl/WKpqgLpN7duc26qM7'}
+                        href={'https://maps.app.goo.gl/ZPex9sY2H6aafVzL6'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"

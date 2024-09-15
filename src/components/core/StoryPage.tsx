@@ -55,14 +55,14 @@ export default function StoryPage() {
     }, [controls]);
 
     return (
-        <div ref={sectionRef} className="sm:p-12 p-6 bg-primary">
+        <section ref={sectionRef} className="sm:p-12 p-6 bg-primary">
             <div className="text-center md:px-12 px-8 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <motion.h1
                     initial="hidden"
                     animate={controls}
                     transition={{ duration: 1 }}
                     variants={{ hidden: { opacity: 0, y: -100 }, visible: { opacity: 1, y: 0 } }}
-                    className={`${tangerine.className} sm:text-8xl text-6xl md:mb-12 mb-6`}
+                    className={`${tangerine.className} sm:text-8xl text-6xl md:mb-12 mb-6 font-bold`}
                 >
                     Love Story
                 </motion.h1>
@@ -196,6 +196,6 @@ export default function StoryPage() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
