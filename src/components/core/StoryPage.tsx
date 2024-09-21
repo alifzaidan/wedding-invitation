@@ -66,7 +66,7 @@ export default function StoryPage() {
                 >
                     Love Story
                 </motion.h1>
-                <div className="flex lg:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6">
+                <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6 lg:w-2/3 m-auto">
                     <motion.div
                         initial="hidden"
                         animate={controls}
@@ -74,7 +74,7 @@ export default function StoryPage() {
                         variants={contentVariants}
                         className="basis-1/3 mx-auto"
                     >
-                        <Image src={'/assets/img/story.webp'} alt="Our Story" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
+                        <Image src={'/assets/img/pertemuan.jpg'} alt="Pertemuan" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
                     </motion.div>
                     <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
                         <motion.h1
@@ -99,7 +99,7 @@ export default function StoryPage() {
                         </motion.p>
                     </div>
                 </div>
-                <div className="flex lg:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6">
+                <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6 lg:w-2/3 m-auto">
                     <motion.div
                         initial="hidden"
                         animate={controls}
@@ -107,39 +107,7 @@ export default function StoryPage() {
                         variants={contentVariants}
                         className="basis-1/3 mx-auto"
                     >
-                        <Image src={'/assets/img/story.webp'} alt="Our Story" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
-                    </motion.div>
-                    <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
-                        <motion.h1
-                            initial="hidden"
-                            animate={controls}
-                            transition={{ duration: 1 }}
-                            variants={contentVariants}
-                            className={`${vidaloka.className} sm:text-2xl text-lg`}
-                        >
-                            LAMARAN
-                        </motion.h1>
-                        <motion.p
-                            initial="hidden"
-                            animate={controls}
-                            transition={{ duration: 1 }}
-                            variants={descVariants}
-                            className="sm:text-lg text-sm italic"
-                        >
-                            Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat, mulai 2018 kami cukup sering
-                            berkomunikasi, bertemu, dan alam seakan terus berkonspirasi untuk menyatukan kami berdua.
-                        </motion.p>
-                    </div>
-                </div>
-                <div className="flex lg:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6">
-                    <motion.div
-                        initial="hidden"
-                        animate={controls}
-                        transition={{ duration: 1 }}
-                        variants={contentVariants}
-                        className="basis-1/3 mx-auto"
-                    >
-                        <Image src={'/assets/img/story.webp'} alt="Our Story" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
+                        <Image src={'/assets/img/pendekatan.jpg'} alt="Pendekatan" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
                     </motion.div>
                     <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
                         <motion.h1
@@ -158,12 +126,12 @@ export default function StoryPage() {
                             variants={descVariants}
                             className="sm:text-lg text-sm italic"
                         >
-                            Kehendaknya menuntun kami pada sebuah pertemuan yang tak pernah di sangka hingga akhirnya membawa kami pada sebuah ikatan
-                            suci yang dicintai-Nya. kami melangsungkan acara lamaran di bulan Mei 2024 lalu.
+                            Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat, mulai 2018 kami cukup sering
+                            berkomunikasi, bertemu, dan alam seakan terus berkonspirasi untuk menyatukan kami berdua.
                         </motion.p>
                     </div>
                 </div>
-                <div className="flex lg:flex-row flex-col items-center md:gap-8 gap-4">
+                <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 md:mb-8 mb-6 lg:w-2/3 m-auto">
                     <motion.div
                         initial="hidden"
                         animate={controls}
@@ -171,7 +139,39 @@ export default function StoryPage() {
                         variants={contentVariants}
                         className="basis-1/3 mx-auto"
                     >
-                        <Image src={'/assets/img/story.webp'} alt="Our Story" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
+                        <Image src={'/assets/img/lamaran.jpg'} alt="Lamaran" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
+                    </motion.div>
+                    <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
+                        <motion.h1
+                            initial="hidden"
+                            animate={controls}
+                            transition={{ duration: 1 }}
+                            variants={contentVariants}
+                            className={`${vidaloka.className} sm:text-2xl text-lg`}
+                        >
+                            LAMARAN
+                        </motion.h1>
+                        <motion.p
+                            initial="hidden"
+                            animate={controls}
+                            transition={{ duration: 1 }}
+                            variants={descVariants}
+                            className="sm:text-lg text-sm italic"
+                        >
+                            Kehendaknya menuntun kami pada sebuah pertemuan yang tak pernah di sangka hingga akhirnya membawa kami pada sebuah ikatan
+                            suci yang dicintai-Nya. kami melangsungkan acara lamaran di bulan Mei 2024 lalu.
+                        </motion.p>
+                    </div>
+                </div>
+                <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 lg:w-2/3 m-auto">
+                    <motion.div
+                        initial="hidden"
+                        animate={controls}
+                        transition={{ duration: 1 }}
+                        variants={contentVariants}
+                        className="basis-1/3 mx-auto"
+                    >
+                        <Image src={'/assets/img/lamaran.jpg'} alt="Menikah" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
                     </motion.div>
                     <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
                         <motion.h1

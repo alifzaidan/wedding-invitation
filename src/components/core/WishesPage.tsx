@@ -1,14 +1,10 @@
 'use client';
 
 import { Tangerine } from 'next/font/google';
-import dynamic from 'next/dynamic';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import WishListF from '../ui/WishListF';
-import WishFormF from '../ui/WishFormF';
-
-const WishForm = dynamic(() => import('../ui/WishForm'), { ssr: false });
-const WishList = dynamic(() => import('../ui/WishList'), { ssr: false });
+import WishForm from '../ui/WishForm';
+import WishList from '../ui/WishList';
 
 const tangerine = Tangerine({
     subsets: ['latin'],
@@ -73,11 +69,11 @@ export default function WishesPage() {
                 </motion.p>
 
                 <motion.div initial="hidden" animate={controls} transition={{ duration: 1 }} variants={contentVariants} className="w-full">
-                    <WishFormF />
+                    <WishForm />
                 </motion.div>
 
                 <motion.div initial="hidden" animate={controls} transition={{ duration: 1 }} variants={contentVariants} className="w-full">
-                    <WishListF />
+                    <WishList />
                 </motion.div>
             </div>
         </section>

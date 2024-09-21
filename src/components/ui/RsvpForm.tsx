@@ -1,35 +1,48 @@
 'use client';
 
-import { saveRsvp } from '@/services/data';
+import { useState } from 'react';
 import { GrSend } from 'react-icons/gr';
 import Swal from 'sweetalert2';
 
 export default function RsvpForm() {
-    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-
-        const result = await saveRsvp(formData);
-
-        if (result.success) {
+    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+        setError('');
+        setIsLoading(true);
+        const res = await fetch('/api/rsvp', {
+            method: 'POST',
+            body: JSON.stringify({
+                name: e.target.name.value,
+                numAttendees: e.target.numAttendees.value,
+                address: e.target.address.value,
+                createdAt: new Date().toISOString(),
+            }),
+        });
+        if (res.status === 200) {
+            setIsLoading(false);
             Swal.fire({
                 title: 'Terima kasih!',
-                text: 'RSVP Anda telah terkirim.',
+                text: 'RSVP berhasil terkirim',
                 icon: 'success',
                 confirmButtonText: 'OK',
             });
-            (event.target as HTMLFormElement).reset();
+            e.target.reset();
         } else {
             Swal.fire({
                 title: 'Gagal!',
-                text: result.message || 'Gagal mengirim RSVP.',
+                text: 'Gagal melakukan RSVP.',
                 icon: 'error',
                 confirmButtonText: 'OK',
             });
+            setError('Terjadi Kesalahan');
+            setIsLoading(false);
         }
     };
+
     return (
-        <form onSubmit={handleSubmit} className="text-left w-full">
+        <form onSubmit={(e) => handleSubmit(e)} className="text-left w-full">
             <div>
                 <label htmlFor="name" className="block mb-2 sm:text-lg text-sm">
                     Nama*
@@ -42,22 +55,6 @@ export default function RsvpForm() {
                     placeholder="Masukkan nama Anda"
                     required
                 />
-
-                <label htmlFor="attendees" className="block mb-2 sm:text-lg text-sm">
-                    Kehadiran*
-                </label>
-                <div className="flex items-center mb-4">
-                    <input type="radio" id="attendees-yes" name="attendees" value="true" className="mr-2" required />
-                    <label htmlFor="attendees-yes" className="sm:text-base text-sm">
-                        Hadir
-                    </label>
-                </div>
-                <div className="flex items-center mb-4">
-                    <input type="radio" id="attendees-no" name="attendees" value="false" className="mr-2" required />
-                    <label htmlFor="attendees-no" className="sm:text-base text-sm">
-                        Tidak Hadir
-                    </label>
-                </div>
 
                 <label htmlFor="numAttendees" className="block mb-2 sm:text-lg text-sm">
                     Jumlah Kehadiran*
@@ -88,12 +85,14 @@ export default function RsvpForm() {
                     placeholder="Masukkan alamat Anda"
                 ></textarea>
             </div>
+            {error !== '' && <div className="text-red-600 font-bold mb-3">{error}</div>}
             <button
+                disabled={isLoading}
                 type="submit"
                 className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
             >
                 <GrSend size={20} />
-                <p>Submit RSVP</p>
+                <p>{isLoading ? 'Tunggu Sebentar...' : 'Submit RSVP'}</p>
             </button>
         </form>
     );

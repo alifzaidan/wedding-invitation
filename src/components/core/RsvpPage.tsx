@@ -116,7 +116,7 @@ export default function RsvpPage() {
                 </motion.div>
             </div>
 
-            <div className="flex flex-col items-center justify-center text-center sm:gap-8 gap-4 sm:px-8 px-4 sm:py-12 py-8 bg-primary border-8 border-secondary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-secondary">
+            <div className="flex flex-col items-center justify-center text-center gap-4 sm:px-8 px-4 sm:py-12 py-8 bg-primary border-8 border-secondary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-secondary">
                 <motion.div
                     initial="hidden"
                     animate={controls}

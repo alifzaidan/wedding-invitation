@@ -10,9 +10,7 @@
         "postinstall": "prisma generate"
     },
     "dependencies": {
-        "@prisma/client": "^5.19.1",
         "add-to-calendar-button-react": "^2.6.19",
-        "clsx": "^2.1.1",
         "firebase": "^10.13.2",
         "framer-motion": "^11.5.4",
         "next": "14.2.7",
@@ -24,8 +22,7 @@
         "sweetalert2": "^11.13.3",
         "swr": "^2.2.5",
         "use-debounce": "^10.0.3",
-        "yet-another-react-lightbox": "^3.21.4",
-        "zod": "^3.23.8"
+        "yet-another-react-lightbox": "^3.21.4"
     },
     "devDependencies": {
         "@types/node": "^20",
@@ -35,7 +32,6 @@
         "eslint": "^8",
         "eslint-config-next": "14.2.7",
         "postcss": "^8",
-        "prisma": "^5.19.1",
         "tailwindcss": "^3.4.1",
         "typescript": "^5"
     }

@@ -109,7 +109,7 @@ export default function SchedulePage() {
                     </div>
 
                     <Link
-                        href={'https://maps.app.goo.gl/ZPex9sY2H6aafVzL6'}
+                        href={'https://maps.app.goo.gl/cQVWoMhgr86dKywX8'}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"

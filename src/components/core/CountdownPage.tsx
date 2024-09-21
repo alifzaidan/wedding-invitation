@@ -85,8 +85,7 @@ export default function CountdownPage() {
                     transition={{ duration: 1 }}
                     variants={{ hidden: { opacity: 0, y: -100 }, visible: { opacity: 1, y: 0 } }}
                 >
-                    <Image src={'/assets/img/castle.png'} alt="Castle" width={1000} height={1000} className="w-52" />
-                    <Image src={'/assets/img/flower-4.png'} alt="Flower" width={1000} height={1000} className="w-52" />
+                    <Image src={'/assets/img/decoration.png'} alt="Flower" width={1000} height={1000} className="md:w-52 w-44 md:mb-6 mb-4" />
                 </motion.div>
                 <motion.h1
                     initial="hidden"

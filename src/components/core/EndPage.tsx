@@ -55,7 +55,7 @@ export default function EndPage() {
                     className="md:w-72 w-52 mx-auto mb-6"
                 >
                     <Image
-                        src={'/assets/img/izza.jpg'}
+                        src={'/assets/img/lamaran.jpg'}
                         alt="Izza & Risky"
                         width={1000}
                         height={1000}

@@ -1,36 +1,48 @@
 'use client';
 
-import { saveWish } from '@/services/data';
+import { useState } from 'react';
 import { GrSend } from 'react-icons/gr';
 import Swal from 'sweetalert2';
 
 export default function WishForm() {
-    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-
-        const result = await saveWish(formData);
-
-        if (result.success) {
+    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+        setError('');
+        setIsLoading(true);
+        const res = await fetch('/api/wishes', {
+            method: 'POST',
+            body: JSON.stringify({
+                name: e.target.name.value,
+                wish: e.target.wish.value,
+                attendees: e.target.attendees.value == 'true' ? true : false,
+                createdAt: new Date().toISOString(),
+            }),
+        });
+        if (res.status === 200) {
+            setIsLoading(false);
             Swal.fire({
                 title: 'Terima kasih!',
-                text: 'Ucapanmu berhasil terkirim. Refresh halaman untuk melihat ucapanmu.',
+                text: 'Ucapanmu berhasil terkirim',
                 icon: 'success',
                 confirmButtonText: 'OK',
             });
-            (event.target as HTMLFormElement).reset();
+            e.target.reset();
         } else {
             Swal.fire({
                 title: 'Gagal!',
-                text: result.message || 'Gagal mengirim ucapanmu.',
+                text: 'Gagal mengirim ucapanmu.',
                 icon: 'error',
                 confirmButtonText: 'OK',
             });
+            setError('Terjadi Kesalahan');
+            setIsLoading(false);
         }
     };
 
     return (
-        <form onSubmit={handleSubmit} className="text-left w-full px-2">
+        <form onSubmit={(e) => handleSubmit(e)} className="text-left w-full px-2">
             <div>
                 <label htmlFor="name" className="block mb-2 sm:text-lg text-sm">
                     Nama*
@@ -71,12 +83,14 @@ export default function WishForm() {
                     <option value="false">Tidak Hadir</option>
                 </select>
             </div>
+            {error !== '' && <div className="text-red-600 font-bold mb-3">{error}</div>}
             <button
+                disabled={isLoading}
                 type="submit"
                 className="flex gap-2 items-center justify-center mt-2 mx-auto bg-secondary text-primary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-70"
             >
                 <GrSend size={20} />
-                <p>Kirimkan Ucapan</p>
+                <p>{isLoading ? 'Tunggu Sebentar...' : 'Kirimkan Ucapan'}</p>
             </button>
         </form>
     );

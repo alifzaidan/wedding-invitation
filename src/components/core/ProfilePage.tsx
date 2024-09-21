@@ -76,7 +76,7 @@ export default function ProfilePage() {
                     >
                         <Image src={'/assets/img/flower-5.png'} alt="Flower" width={1000} height={1000} className="absolute w-44 -top-4 -left-6" />
                         <Image
-                            src={'/assets/img/izza.jpg'}
+                            src={'/assets/img/pendekatan.jpg'}
                             alt="Izza"
                             width={1000}
                             height={1000}
@@ -110,7 +110,7 @@ export default function ProfilePage() {
                     transition={{ duration: 1 }}
                     variants={{ hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 } }}
                 >
-                    <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-28" />
+                    <Image src={'/assets/img/and.png'} alt="Izza & Risky" width={1000} height={1000} className="md:w-40 w-20" />
                 </motion.div>
                 <div className="text-center text-primary">
                     <motion.div
@@ -128,7 +128,7 @@ export default function ProfilePage() {
                             className="absolute w-44 -top-4 -right-6 transform scale-x-[-1]"
                         />
                         <Image
-                            src={'/assets/img/izza.jpg'}
+                            src={'/assets/img/lamaran.jpg'}
                             alt="Izza"
                             width={1000}
                             height={1000}
