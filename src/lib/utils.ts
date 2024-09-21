@@ -6,6 +6,17 @@ export const formateDate = (date: string) => {
     });
 };
 
+export const formateDateF = (timestamp: { seconds: number; nanoseconds: number }) => {
+    let dateObj: Date;
+    dateObj = new Date(timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000);
+
+    return dateObj.toLocaleDateString('id-ID', {
+        day: 'numeric',
+        month: 'numeric',
+        year: 'numeric',
+    });
+};
+
 export const generatePagination = (currentPage: number, totalPages: number) => {
     if (totalPages <= 7) {
         return Array.from({ length: totalPages }, (_, i) => i + 1);
