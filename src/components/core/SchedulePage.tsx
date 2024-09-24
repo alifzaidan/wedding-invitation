@@ -105,7 +105,7 @@ export default function SchedulePage() {
                     <div className="sm:mb-4 mb-2">
                         <p className="sm:text-lg text-sm">Bertempat di :</p>
                         <p className="sm:text-lg text-sm">Rumah Mempelai Wanita</p>
-                        <p className="sm:text-lg text-sm">Ds. Blongko Kec. Ngetos Kab. Nganjuk</p>
+                        <p className="sm:text-lg text-sm">Ds. Blongko RT 01 RW 01, Kec. Ngetos, Kab. Nganjuk</p>
                     </div>
 
                     <Link

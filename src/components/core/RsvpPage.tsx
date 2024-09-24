@@ -161,7 +161,7 @@ export default function RsvpPage() {
                             <Image src={'/assets/img/chip-atm.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-12" />
                             <div className="text-left">
                                 <p className="content-start sm:text-lg text-sm font-bold">1710 0150 9359 7</p>
-                                <p className="content-start sm:text-lg text-sm font-bold">Binti Izatul Munthamimah</p>
+                                <p className="content-start sm:text-lg text-sm">Binti Izatul Munthamimah</p>
                             </div>
                             <button
                                 onClick={handleCopyAccount1}
@@ -186,7 +186,7 @@ export default function RsvpPage() {
                             <Image src={'/assets/img/chip-atm.png'} alt="Bank Mandiri" width={1000} height={1000} className="w-12" />
                             <div className="text-left">
                                 <p className="content-start sm:text-lg text-sm font-bold">1710 0133 7573 1</p>
-                                <p className="content-start sm:text-lg text-sm font-bold">Risky Dwi Syah Putra</p>
+                                <p className="content-start sm:text-lg text-sm">Risky Dwi Syah Putra</p>
                             </div>
                             <button
                                 onClick={handleCopyAccount2}
@@ -209,9 +209,7 @@ export default function RsvpPage() {
                         >
                             <MdOutlineCardGiftcard className="text-primary sm:text-4xl text-3xl mb-2" />
                             <p className={`${vidaloka.className} content-start sm:text-3xl text-xl`}>KIRIM HADIAH</p>
-                            <p className="content-start sm:text-lg text-sm">
-                                Jln. Sumber Sekar Gg.Dahlia No.10 Rt.01/Rw.07 Kelurahan Kalirejo, Kecamatan Lawang, Kabupaten Malang
-                            </p>
+                            <p className="content-start sm:text-lg text-sm">Ds. Blongko RT 01 RW 01, Kec. Ngetos, Kab. Nganjuk</p>
                             <button
                                 onClick={handleCopyAddress}
                                 className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
