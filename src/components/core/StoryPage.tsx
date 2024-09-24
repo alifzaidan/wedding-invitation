@@ -56,7 +56,7 @@ export default function StoryPage() {
 
     return (
         <section ref={sectionRef} className="sm:p-12 p-6 bg-primary">
-            <div className="text-center md:px-12 px-8 sm:py-12 py-8 bg-pattern border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
+            <div className="text-center md:px-12 px-8 sm:py-12 py-8 bg-pattern bg-cover border-8 border-primary shadow-2xl h-full w-full sm:rounded-3xl rounded-2xl text-primary">
                 <motion.h1
                     initial="hidden"
                     animate={controls}
@@ -171,7 +171,7 @@ export default function StoryPage() {
                         variants={contentVariants}
                         className="basis-1/3 mx-auto"
                     >
-                        <Image src={'/assets/img/lamaran.jpg'} alt="Menikah" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
+                        <Image src={'/assets/img/menikah.jpg'} alt="Menikah" width={1000} height={1000} className="sm:rounded-2xl rounded-lg" />
                     </motion.div>
                     <div className="lg:text-left basis-2/3 text-center md:space-y-4 space-y-2">
                         <motion.h1

@@ -25,9 +25,9 @@ const images = [
     '/assets/img/gallery-2.jpg',
     '/assets/img/gallery-3.jpg',
     '/assets/img/gallery-4.jpg',
-    '/assets/img/gallery-5.png',
+    '/assets/img/gallery-5.jpg',
     '/assets/img/gallery-6.jpg',
-    '/assets/img/gallery-7.jpeg',
+    '/assets/img/gallery-7.jpg',
     '/assets/img/gallery-8.jpg',
     '/assets/img/gallery-1.jpg',
 ];
@@ -49,7 +49,7 @@ export default function GalleryPage() {
                     controls.start('hidden');
                 }
             },
-            { threshold: 0.3 }
+            { threshold: 0.2 }
         );
 
         if (currentRef) {
