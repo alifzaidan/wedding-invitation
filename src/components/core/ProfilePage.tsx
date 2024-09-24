@@ -128,8 +128,8 @@ export default function ProfilePage() {
                             className="absolute w-44 -top-4 -right-6 transform scale-x-[-1]"
                         />
                         <Image
-                            src={'/assets/img/risky.jpg'}
-                            alt="Izza"
+                            src={'/assets/img/gallery-8.jpg'}
+                            alt="Risky"
                             width={1000}
                             height={1000}
                             className="rounded-t-full border-8 border-primary"
