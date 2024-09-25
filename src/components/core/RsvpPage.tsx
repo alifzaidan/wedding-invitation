@@ -84,14 +84,12 @@ export default function RsvpPage() {
     };
 
     const handleCopyAddress = () => {
-        navigator.clipboard
-            .writeText('Jln. Sumber Sekar Gg.Dahlia No.10 Rt.01/Rw.07 Kelurahan Kalirejo, Kecamatan Lawang, Kabupaten Malang')
-            .then(() => {
-                setAddressText('Berhasil Disalin');
-                setTimeout(() => {
-                    setAddressText('Salin Alamat');
-                }, 2000);
-            });
+        navigator.clipboard.writeText('Ds. Blongko RT 01 RW 01, Kec. Ngetos, Kab. Nganjuk (Rumah Bapak Abdul Aziz)').then(() => {
+            setAddressText('Alamat Berhasil Disalin');
+            setTimeout(() => {
+                setAddressText('Salin Alamat');
+            }, 2000);
+        });
     };
 
     return (
@@ -209,7 +207,10 @@ export default function RsvpPage() {
                         >
                             <MdOutlineCardGiftcard className="text-primary sm:text-4xl text-3xl mb-2" />
                             <p className={`${vidaloka.className} content-start sm:text-3xl text-xl`}>KIRIM HADIAH</p>
-                            <p className="content-start sm:text-lg text-sm">Ds. Blongko RT 01 RW 01, Kec. Ngetos, Kab. Nganjuk</p>
+                            <p className="content-start sm:text-lg text-sm">
+                                Ds. Blongko RT 01 RW 01, Kec. Ngetos, Kab. Nganjuk <br />
+                                (Rumah Bapak Abdul Aziz)
+                            </p>
                             <button
                                 onClick={handleCopyAddress}
                                 className="flex gap-2 items-center justify-center mt-2 bg-primary text-secondary md:text-base text-sm py-3 px-6 rounded-full transition duration-200 md:hover:bg-opacity-90"
